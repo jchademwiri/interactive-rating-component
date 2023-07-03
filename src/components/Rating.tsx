@@ -12,10 +12,7 @@ const Rating = () => {
     setSelectedRating(rating);
   };
   const handleSubmit = () => {
-    router.push('/feedback', {
-      selectedRating,
-    });
-    console.log(selectedRating);
+    router.push(`/feedback?rate=${selectedRating}`);
   };
 
   return (
